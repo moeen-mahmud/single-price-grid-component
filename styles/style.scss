@@ -1,0 +1,205 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+// Colors Declaration
+
+$primary-cyan: hsl(179, 62%, 43%);
+$primary-cyan-variant: hsl(179, 66%, 44%);
+$primary-bright-yellow: hsl(71, 73%, 54%);
+$neutral-light-gray: hsl(204, 43%, 93%);
+$neutral-grayish-blue: hsl(218, 22%, 67%);
+$neutral-white: hsl(0, 0%, 100%);
+$attribution-color: hsl(228, 45%, 44%);
+
+/* Base Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: $neutral-light-gray;
+}
+
+// Repetative Properties
+
+$gaps: 2.5rem;
+$gaps-wrapper: 2.5rem;
+$sub-heading: 1.1rem;
+
+/* Main Container */
+.container {
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Component Styling
+
+.component {
+  max-width: 45%;
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px;
+  background-color: $neutral-white;
+}
+
+// Top Section Styling
+
+.top-section {
+  padding: $gaps;
+  background-color: $neutral-white;
+  border-radius: 10px 10px 0 0;
+}
+
+.top-section--title {
+  color: $primary-cyan;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.top-section--subtitle {
+  color: $primary-bright-yellow;
+  font-size: $sub-heading;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.top-section--para {
+  color: $neutral-grayish-blue;
+  line-height: 1.5;
+}
+
+// Wrapper Styling
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $neutral-white;
+}
+
+.subs-section {
+  background-color: $primary-cyan;
+  padding: $gaps-wrapper;
+  border-radius: 0 0 0 10px;
+}
+
+.subs-section--title {
+  font-size: $sub-heading;
+  margin-bottom: 1rem;
+}
+
+.muted {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.subs-section--price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+
+  h1 {
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    font-weight: 700;
+  }
+
+  small {
+    font-weight: 200;
+    letter-spacing: 0.6px;
+    opacity: 0.8;
+  }
+}
+
+.subs-section--para {
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: $primary-bright-yellow;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+  
+
+  .btn-primary--style {
+    text-decoration: none;
+    color: $neutral-white;
+  }
+  
+}
+
+.whyus-section {
+  background-color: $primary-cyan-variant;
+  padding: $gaps-wrapper;
+  border-radius: 0 0 10px 0;
+}
+
+.whyus-section--title {
+  font-size: $sub-heading;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+
+  a {
+    text-decoration: none;
+    color: $attribution-color;
+  }
+  
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .container {
+    margin: 3rem 0;
+    border-radius: 10px;
+  }
+
+  .component {
+    min-width: 80%;
+    margin: 2rem 0;
+  }
+
+  .top-section {
+    padding: 2rem;
+    // border: none;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .subs-section {
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .whyus-section {
+    padding: 2rem;
+    border: none;
+    border-radius: 0 0 10px 10px;
+  }
+}

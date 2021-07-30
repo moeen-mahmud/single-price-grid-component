@@ -1,0 +1,187 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+/* Base Style */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #e5eff5;
+}
+
+/* Main Container */
+.container {
+  height: 97vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component {
+  max-width: 45%;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px;
+  background-color: white;
+}
+
+.top-section {
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.top-section--title {
+  color: #2ab2af;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.top-section--subtitle {
+  color: #c0df34;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.top-section--para {
+  color: #98a6bd;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  color: white;
+}
+
+.subs-section {
+  background-color: #2ab2af;
+  padding: 2.5rem;
+  border-radius: 0 0 0 10px;
+}
+
+.subs-section--title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.muted {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.subs-section--price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.subs-section--price h1 {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  font-weight: 700;
+}
+
+.subs-section--price small {
+  font-weight: 200;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+}
+
+.subs-section--para {
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+button .btn-primary--style {
+  text-decoration: none;
+  color: white;
+}
+
+.whyus-section {
+  background-color: #26bab8;
+  padding: 2.5rem;
+  border-radius: 0 0 10px 0;
+}
+
+.whyus-section--title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 0.2rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1000px) {
+  .container {
+    margin: 3rem 0;
+    border-radius: 10px;
+  }
+  .component {
+    min-width: 80%;
+    margin: 2rem 0;
+  }
+  .top-section {
+    padding: 2rem;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .subs-section {
+    padding: 2rem;
+    border-radius: 0;
+  }
+  .whyus-section {
+    padding: 2rem;
+    border: none;
+    border-radius: 0 0 10px 10px;
+  }
+}
