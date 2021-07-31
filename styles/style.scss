@@ -126,19 +126,15 @@ $shadows: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 
-button {
+.btn-primary {
   width: 100%;
   padding: 1rem 0;
   background-color: $primary-bright-yellow;
+  color: $neutral-white;
   border: none;
   border-radius: 5px;
   box-shadow: $shadows;
   cursor: pointer;
-
-  .btn-primary--style {
-    text-decoration: none;
-    color: $neutral-white;
-  }
 
   &:hover {
     opacity: 0.9;
