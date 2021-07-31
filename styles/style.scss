@@ -28,9 +28,10 @@ body {
 
 // Repetative Properties
 
-$gaps: 2.5rem;
-$gaps-wrapper: 2.5rem;
+$padds: 2.5rem;
+$padds-wrapper: 2.5rem;
 $sub-heading: 1.1rem;
+$shadows: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
 
 /* Main Container */
 .container {
@@ -44,7 +45,7 @@ $sub-heading: 1.1rem;
 
 .component {
   max-width: 45%;
-  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: $shadows;
   border-radius: 10px 10px;
   background-color: $neutral-white;
 }
@@ -52,7 +53,7 @@ $sub-heading: 1.1rem;
 // Top Section Styling
 
 .top-section {
-  padding: $gaps;
+  padding: $padds;
   background-color: $neutral-white;
   border-radius: 10px 10px 0 0;
 }
@@ -81,12 +82,13 @@ $sub-heading: 1.1rem;
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 0;
   color: $neutral-white;
 }
 
 .subs-section {
   background-color: $primary-cyan;
-  padding: $gaps-wrapper;
+  padding: $padds-wrapper;
   border-radius: 0 0 0 10px;
 }
 
@@ -130,19 +132,22 @@ button {
   background-color: $primary-bright-yellow;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
-  
+  box-shadow: $shadows;
+  cursor: pointer;
 
   .btn-primary--style {
     text-decoration: none;
     color: $neutral-white;
   }
-  
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .whyus-section {
   background-color: $primary-cyan-variant;
-  padding: $gaps-wrapper;
+  padding: $padds-wrapper;
   border-radius: 0 0 10px 0;
 }
 
@@ -169,7 +174,7 @@ ul {
     text-decoration: none;
     color: $attribution-color;
   }
-  
+}
 
 @media only screen and (min-width: 280px) and (max-width: 1000px) {
   .container {
